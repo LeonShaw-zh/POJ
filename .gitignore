@@ -1,0 +1,4 @@
+*.exe
+/.vscode/ipch
+input.txt
+output.txt
