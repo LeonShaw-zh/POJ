@@ -1,6 +1,7 @@
 #define USEFILEIO
 #include <fstream>
 #include <iostream>
+#include <cstdio>
 using namespace std;
 
 int main()
@@ -13,6 +14,8 @@ int main()
     // streambuf *stream_buffer_cout = cout.rdbuf();
     cin.rdbuf(filein.rdbuf());
     // cout.rdbuf(fileout.rdbuf());
+    freopen("input.txt", "r", stdin);
+    // freopen("output.txt", "w", stdout);
 #endif
 
     return 0;
